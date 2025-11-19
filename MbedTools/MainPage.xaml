@@ -3,4 +3,31 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="MbedTools.MainPage">
 
+    <HorizontalStackLayout>
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="40" />
+                <RowDefinition Height="40" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            
+            <Label Grid.Row="0"
+                Text="Sim"
+                FontSize="32"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Label Grid.Row = "1"
+                Text="Server"
+                FontSize="32"
+                HorizontalOptions="Center"
+                VerticalOptions="Center" />
+            <Button Grid.Row = "2"
+                Clicked="OnCounterClicked"
+                Text="power Sim25"/>
+        </Grid>
+
+        <Grid>
+            
+        </Grid>
+    </HorizontalStackLayout>
 </ContentPage>
